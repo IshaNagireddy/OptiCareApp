@@ -1,0 +1,881 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FD1E15860A6ECAFD98EB019 /* Pods_OptiCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBE13FADB972AE9487D59CE /* Pods_OptiCare.framework */; };
+		58B8E06D4D0744EAFEF0FB52 /* Pods_OptiCare_OptiCareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70A3A5A5A878AAEAF508C69 /* Pods_OptiCare_OptiCareUITests.framework */; };
+		9C84CDE575AA68B15DB5FDCB /* Pods_OptiCareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7F7893C596AA59ED961946 /* Pods_OptiCareTests.framework */; };
+		DA5736622B5DDD420039B968 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA5736612B5DDD420039B968 /* GoogleService-Info.plist */; };
+		DA5736652B5DDDC10039B968 /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = DA5736642B5DDDC10039B968 /* FirebaseMLModelDownloader */; };
+		DA5DA31B2B60098700E4C630 /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = DA5DA31A2B60098700E4C630 /* labels.txt */; };
+		DA90B8032B7CFD7A00CC5CE0 /* CollectionViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90B8022B7CFD7A00CC5CE0 /* CollectionViewOptions.swift */; };
+		DA90B8072B7CFE0100CC5CE0 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA90B8062B7CFE0100CC5CE0 /* CollectionViewCell.swift */; };
+		DAA15BF32B53747F0097ABF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15BF22B53747F0097ABF0 /* AppDelegate.swift */; };
+		DAA15BF52B53747F0097ABF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15BF42B53747F0097ABF0 /* SceneDelegate.swift */; };
+		DAA15BF72B53747F0097ABF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15BF62B53747F0097ABF0 /* ViewController.swift */; };
+		DAA15BFA2B53747F0097ABF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA15BF82B53747F0097ABF0 /* Main.storyboard */; };
+		DAA15BFD2B53747F0097ABF0 /* OptiCare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAA15BFB2B53747F0097ABF0 /* OptiCare.xcdatamodeld */; };
+		DAA15BFF2B5374800097ABF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA15BFE2B5374800097ABF0 /* Assets.xcassets */; };
+		DAA15C022B5374800097ABF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA15C002B5374800097ABF0 /* LaunchScreen.storyboard */; };
+		DAA15C0D2B5374800097ABF0 /* OptiCareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15C0C2B5374800097ABF0 /* OptiCareTests.swift */; };
+		DAA15C172B5374800097ABF0 /* OptiCareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15C162B5374800097ABF0 /* OptiCareUITests.swift */; };
+		DAA15C192B5374800097ABF0 /* OptiCareUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15C182B5374800097ABF0 /* OptiCareUITestsLaunchTests.swift */; };
+		DAA15C2C2B538AC30097ABF0 /* Poppins-1 in Resources */ = {isa = PBXBuildFile; fileRef = DAA15C2B2B538AC30097ABF0 /* Poppins-1 */; };
+		DAA15C302B53AFB20097ABF0 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAA15C2F2B53AFB20097ABF0 /* Poppins-Regular.ttf */; };
+		DAA15C322B5446CB0097ABF0 /* ChooseDiseaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15C312B5446CB0097ABF0 /* ChooseDiseaseView.swift */; };
+		DAA15C342B5446E10097ABF0 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15C332B5446E10097ABF0 /* ResourcesView.swift */; };
+		DAA15C362B5447220097ABF0 /* SlitLampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15C352B5447220097ABF0 /* SlitLampView.swift */; };
+		DAA15C382B5447440097ABF0 /* CataractsResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15C372B5447440097ABF0 /* CataractsResultView.swift */; };
+		DAA15C3A2B54475F0097ABF0 /* FundusImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15C392B54475F0097ABF0 /* FundusImagesView.swift */; };
+		DAA15C3C2B5447710097ABF0 /* IOPTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15C3B2B5447710097ABF0 /* IOPTestView.swift */; };
+		DAA15C3E2B5448330097ABF0 /* GlaucomaResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15C3D2B5448330097ABF0 /* GlaucomaResultsView.swift */; };
+		DAA15C402B5448460097ABF0 /* SeverityAssesmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15C3F2B5448460097ABF0 /* SeverityAssesmentView.swift */; };
+		DAA15C422B54485B0097ABF0 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15C412B54485B0097ABF0 /* SummaryView.swift */; };
+		DAA15C442B546D3E0097ABF0 /* IOPResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15C432B546D3E0097ABF0 /* IOPResultsView.swift */; };
+		DAA15C462B54A8BC0097ABF0 /* ResourcesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15C452B54A8BC0097ABF0 /* ResourcesDetailView.swift */; };
+		DACA27F22B560ADF00FE4E36 /* 8000HzTestTone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DACA27F12B55FE5100FE4E36 /* 8000HzTestTone.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAA15C092B5374800097ABF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAA15BE72B53747F0097ABF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAA15BEE2B53747F0097ABF0;
+			remoteInfo = OptiCare;
+		};
+		DAA15C132B5374800097ABF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAA15BE72B53747F0097ABF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAA15BEE2B53747F0097ABF0;
+			remoteInfo = OptiCare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D0BA835759A141EBAF665D6 /* Pods-OptiCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OptiCare.debug.xcconfig"; path = "Target Support Files/Pods-OptiCare/Pods-OptiCare.debug.xcconfig"; sourceTree = "<group>"; };
+		0FBE13FADB972AE9487D59CE /* Pods_OptiCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OptiCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB789801036CCB906A8ACEF /* Pods-OptiCare-OptiCareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OptiCare-OptiCareUITests.release.xcconfig"; path = "Target Support Files/Pods-OptiCare-OptiCareUITests/Pods-OptiCare-OptiCareUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1CE52642FEF9EDA4CC0E7DB7 /* Pods-OptiCare-OptiCareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OptiCare-OptiCareUITests.debug.xcconfig"; path = "Target Support Files/Pods-OptiCare-OptiCareUITests/Pods-OptiCare-OptiCareUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		34CD0BD979B25EFD68AF366B /* Pods-OptiCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OptiCare.release.xcconfig"; path = "Target Support Files/Pods-OptiCare/Pods-OptiCare.release.xcconfig"; sourceTree = "<group>"; };
+		3B7F7893C596AA59ED961946 /* Pods_OptiCareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OptiCareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6220DFAB85B13540A72D0967 /* Pods-OptiCareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OptiCareTests.debug.xcconfig"; path = "Target Support Files/Pods-OptiCareTests/Pods-OptiCareTests.debug.xcconfig"; sourceTree = "<group>"; };
+		89AF343DD8BB10F44E64D804 /* Pods-OptiCareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OptiCareTests.release.xcconfig"; path = "Target Support Files/Pods-OptiCareTests/Pods-OptiCareTests.release.xcconfig"; sourceTree = "<group>"; };
+		B70A3A5A5A878AAEAF508C69 /* Pods_OptiCare_OptiCareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OptiCare_OptiCareUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5736612B5DDD420039B968 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DA5DA31A2B60098700E4C630 /* labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labels.txt; sourceTree = "<group>"; };
+		DA90B8022B7CFD7A00CC5CE0 /* CollectionViewOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewOptions.swift; sourceTree = "<group>"; };
+		DA90B8062B7CFE0100CC5CE0 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		DAA15BEF2B53747F0097ABF0 /* OptiCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OptiCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA15BF22B53747F0097ABF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAA15BF42B53747F0097ABF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DAA15BF62B53747F0097ABF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAA15BF92B53747F0097ABF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAA15BFC2B53747F0097ABF0 /* OptiCare.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OptiCare.xcdatamodel; sourceTree = "<group>"; };
+		DAA15BFE2B5374800097ABF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAA15C012B5374800097ABF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAA15C032B5374800097ABF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA15C082B5374800097ABF0 /* OptiCareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OptiCareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA15C0C2B5374800097ABF0 /* OptiCareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptiCareTests.swift; sourceTree = "<group>"; };
+		DAA15C122B5374800097ABF0 /* OptiCareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OptiCareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA15C162B5374800097ABF0 /* OptiCareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptiCareUITests.swift; sourceTree = "<group>"; };
+		DAA15C182B5374800097ABF0 /* OptiCareUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptiCareUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DAA15C2B2B538AC30097ABF0 /* Poppins-1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Poppins-1"; sourceTree = "<group>"; };
+		DAA15C2F2B53AFB20097ABF0 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		DAA15C312B5446CB0097ABF0 /* ChooseDiseaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDiseaseView.swift; sourceTree = "<group>"; };
+		DAA15C332B5446E10097ABF0 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
+		DAA15C352B5447220097ABF0 /* SlitLampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlitLampView.swift; sourceTree = "<group>"; };
+		DAA15C372B5447440097ABF0 /* CataractsResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CataractsResultView.swift; sourceTree = "<group>"; };
+		DAA15C392B54475F0097ABF0 /* FundusImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundusImagesView.swift; sourceTree = "<group>"; };
+		DAA15C3B2B5447710097ABF0 /* IOPTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOPTestView.swift; sourceTree = "<group>"; };
+		DAA15C3D2B5448330097ABF0 /* GlaucomaResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlaucomaResultsView.swift; sourceTree = "<group>"; };
+		DAA15C3F2B5448460097ABF0 /* SeverityAssesmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityAssesmentView.swift; sourceTree = "<group>"; };
+		DAA15C412B54485B0097ABF0 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		DAA15C432B546D3E0097ABF0 /* IOPResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOPResultsView.swift; sourceTree = "<group>"; };
+		DAA15C452B54A8BC0097ABF0 /* ResourcesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesDetailView.swift; sourceTree = "<group>"; };
+		DACA27F12B55FE5100FE4E36 /* 8000HzTestTone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 8000HzTestTone.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAA15BEC2B53747F0097ABF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FD1E15860A6ECAFD98EB019 /* Pods_OptiCare.framework in Frameworks */,
+				DA5736652B5DDDC10039B968 /* FirebaseMLModelDownloader in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA15C052B5374800097ABF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C84CDE575AA68B15DB5FDCB /* Pods_OptiCareTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA15C0F2B5374800097ABF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58B8E06D4D0744EAFEF0FB52 /* Pods_OptiCare_OptiCareUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6876AA6AC926E7B0C1932F9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D0BA835759A141EBAF665D6 /* Pods-OptiCare.debug.xcconfig */,
+				34CD0BD979B25EFD68AF366B /* Pods-OptiCare.release.xcconfig */,
+				1CE52642FEF9EDA4CC0E7DB7 /* Pods-OptiCare-OptiCareUITests.debug.xcconfig */,
+				1BB789801036CCB906A8ACEF /* Pods-OptiCare-OptiCareUITests.release.xcconfig */,
+				6220DFAB85B13540A72D0967 /* Pods-OptiCareTests.debug.xcconfig */,
+				89AF343DD8BB10F44E64D804 /* Pods-OptiCareTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		877F1F11F5CE08FE3CC37B69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FBE13FADB972AE9487D59CE /* Pods_OptiCare.framework */,
+				B70A3A5A5A878AAEAF508C69 /* Pods_OptiCare_OptiCareUITests.framework */,
+				3B7F7893C596AA59ED961946 /* Pods_OptiCareTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAA15BE62B53747F0097ABF0 = {
+			isa = PBXGroup;
+			children = (
+				DAA15C2F2B53AFB20097ABF0 /* Poppins-Regular.ttf */,
+				DAA15BF12B53747F0097ABF0 /* OptiCare */,
+				DAA15C0B2B5374800097ABF0 /* OptiCareTests */,
+				DAA15C152B5374800097ABF0 /* OptiCareUITests */,
+				DAA15BF02B53747F0097ABF0 /* Products */,
+				6876AA6AC926E7B0C1932F9D /* Pods */,
+				877F1F11F5CE08FE3CC37B69 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DAA15BF02B53747F0097ABF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAA15BEF2B53747F0097ABF0 /* OptiCare.app */,
+				DAA15C082B5374800097ABF0 /* OptiCareTests.xctest */,
+				DAA15C122B5374800097ABF0 /* OptiCareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAA15BF12B53747F0097ABF0 /* OptiCare */ = {
+			isa = PBXGroup;
+			children = (
+				DAA15C2B2B538AC30097ABF0 /* Poppins-1 */,
+				DAA15BF22B53747F0097ABF0 /* AppDelegate.swift */,
+				DAA15BF42B53747F0097ABF0 /* SceneDelegate.swift */,
+				DAA15BF62B53747F0097ABF0 /* ViewController.swift */,
+				DAA15C312B5446CB0097ABF0 /* ChooseDiseaseView.swift */,
+				DAA15C332B5446E10097ABF0 /* ResourcesView.swift */,
+				DAA15C452B54A8BC0097ABF0 /* ResourcesDetailView.swift */,
+				DAA15C352B5447220097ABF0 /* SlitLampView.swift */,
+				DAA15C372B5447440097ABF0 /* CataractsResultView.swift */,
+				DAA15C392B54475F0097ABF0 /* FundusImagesView.swift */,
+				DAA15C3B2B5447710097ABF0 /* IOPTestView.swift */,
+				DAA15C432B546D3E0097ABF0 /* IOPResultsView.swift */,
+				DAA15C3D2B5448330097ABF0 /* GlaucomaResultsView.swift */,
+				DAA15C3F2B5448460097ABF0 /* SeverityAssesmentView.swift */,
+				DA90B8022B7CFD7A00CC5CE0 /* CollectionViewOptions.swift */,
+				DA90B8062B7CFE0100CC5CE0 /* CollectionViewCell.swift */,
+				DAA15C412B54485B0097ABF0 /* SummaryView.swift */,
+				DA5DA31A2B60098700E4C630 /* labels.txt */,
+				DA5736612B5DDD420039B968 /* GoogleService-Info.plist */,
+				DACA27F12B55FE5100FE4E36 /* 8000HzTestTone.mp4 */,
+				DAA15BF82B53747F0097ABF0 /* Main.storyboard */,
+				DAA15BFE2B5374800097ABF0 /* Assets.xcassets */,
+				DAA15C002B5374800097ABF0 /* LaunchScreen.storyboard */,
+				DAA15C032B5374800097ABF0 /* Info.plist */,
+				DAA15BFB2B53747F0097ABF0 /* OptiCare.xcdatamodeld */,
+			);
+			path = OptiCare;
+			sourceTree = "<group>";
+		};
+		DAA15C0B2B5374800097ABF0 /* OptiCareTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAA15C0C2B5374800097ABF0 /* OptiCareTests.swift */,
+			);
+			path = OptiCareTests;
+			sourceTree = "<group>";
+		};
+		DAA15C152B5374800097ABF0 /* OptiCareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAA15C162B5374800097ABF0 /* OptiCareUITests.swift */,
+				DAA15C182B5374800097ABF0 /* OptiCareUITestsLaunchTests.swift */,
+			);
+			path = OptiCareUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAA15BEE2B53747F0097ABF0 /* OptiCare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA15C1C2B5374800097ABF0 /* Build configuration list for PBXNativeTarget "OptiCare" */;
+			buildPhases = (
+				42DBB2C8FADB1696251A2272 /* [CP] Check Pods Manifest.lock */,
+				DAA15BEB2B53747F0097ABF0 /* Sources */,
+				DAA15BEC2B53747F0097ABF0 /* Frameworks */,
+				DAA15BED2B53747F0097ABF0 /* Resources */,
+				3557DE389F2FB7505C7E27DD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OptiCare;
+			packageProductDependencies = (
+				DA5736642B5DDDC10039B968 /* FirebaseMLModelDownloader */,
+			);
+			productName = OptiCare;
+			productReference = DAA15BEF2B53747F0097ABF0 /* OptiCare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAA15C072B5374800097ABF0 /* OptiCareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA15C1F2B5374800097ABF0 /* Build configuration list for PBXNativeTarget "OptiCareTests" */;
+			buildPhases = (
+				C356DEA36AE0DE6AE3624A73 /* [CP] Check Pods Manifest.lock */,
+				DAA15C042B5374800097ABF0 /* Sources */,
+				DAA15C052B5374800097ABF0 /* Frameworks */,
+				DAA15C062B5374800097ABF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAA15C0A2B5374800097ABF0 /* PBXTargetDependency */,
+			);
+			name = OptiCareTests;
+			productName = OptiCareTests;
+			productReference = DAA15C082B5374800097ABF0 /* OptiCareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAA15C112B5374800097ABF0 /* OptiCareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA15C222B5374800097ABF0 /* Build configuration list for PBXNativeTarget "OptiCareUITests" */;
+			buildPhases = (
+				FC68F5AD7E316B5C3A629E92 /* [CP] Check Pods Manifest.lock */,
+				DAA15C0E2B5374800097ABF0 /* Sources */,
+				DAA15C0F2B5374800097ABF0 /* Frameworks */,
+				DAA15C102B5374800097ABF0 /* Resources */,
+				69DF8C0389C1A5932751C5DC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAA15C142B5374800097ABF0 /* PBXTargetDependency */,
+			);
+			name = OptiCareUITests;
+			productName = OptiCareUITests;
+			productReference = DAA15C122B5374800097ABF0 /* OptiCareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAA15BE72B53747F0097ABF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DAA15BEE2B53747F0097ABF0 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					DAA15C072B5374800097ABF0 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = DAA15BEE2B53747F0097ABF0;
+					};
+					DAA15C112B5374800097ABF0 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = DAA15BEE2B53747F0097ABF0;
+					};
+				};
+			};
+			buildConfigurationList = DAA15BEA2B53747F0097ABF0 /* Build configuration list for PBXProject "OptiCare" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAA15BE62B53747F0097ABF0;
+			packageReferences = (
+				DA5736632B5DDDC10039B968 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = DAA15BF02B53747F0097ABF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAA15BEE2B53747F0097ABF0 /* OptiCare */,
+				DAA15C072B5374800097ABF0 /* OptiCareTests */,
+				DAA15C112B5374800097ABF0 /* OptiCareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAA15BED2B53747F0097ABF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA5DA31B2B60098700E4C630 /* labels.txt in Resources */,
+				DACA27F22B560ADF00FE4E36 /* 8000HzTestTone.mp4 in Resources */,
+				DAA15C2C2B538AC30097ABF0 /* Poppins-1 in Resources */,
+				DAA15C022B5374800097ABF0 /* LaunchScreen.storyboard in Resources */,
+				DAA15BFF2B5374800097ABF0 /* Assets.xcassets in Resources */,
+				DAA15BFA2B53747F0097ABF0 /* Main.storyboard in Resources */,
+				DAA15C302B53AFB20097ABF0 /* Poppins-Regular.ttf in Resources */,
+				DA5736622B5DDD420039B968 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA15C062B5374800097ABF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA15C102B5374800097ABF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3557DE389F2FB7505C7E27DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OptiCare/Pods-OptiCare-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OptiCare/Pods-OptiCare-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OptiCare/Pods-OptiCare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42DBB2C8FADB1696251A2272 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OptiCare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69DF8C0389C1A5932751C5DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OptiCare-OptiCareUITests/Pods-OptiCare-OptiCareUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OptiCare-OptiCareUITests/Pods-OptiCare-OptiCareUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OptiCare-OptiCareUITests/Pods-OptiCare-OptiCareUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C356DEA36AE0DE6AE3624A73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OptiCareTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC68F5AD7E316B5C3A629E92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OptiCare-OptiCareUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAA15BEB2B53747F0097ABF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA15C462B54A8BC0097ABF0 /* ResourcesDetailView.swift in Sources */,
+				DAA15C422B54485B0097ABF0 /* SummaryView.swift in Sources */,
+				DA90B8072B7CFE0100CC5CE0 /* CollectionViewCell.swift in Sources */,
+				DAA15C3A2B54475F0097ABF0 /* FundusImagesView.swift in Sources */,
+				DAA15C342B5446E10097ABF0 /* ResourcesView.swift in Sources */,
+				DAA15BFD2B53747F0097ABF0 /* OptiCare.xcdatamodeld in Sources */,
+				DAA15C442B546D3E0097ABF0 /* IOPResultsView.swift in Sources */,
+				DAA15C3E2B5448330097ABF0 /* GlaucomaResultsView.swift in Sources */,
+				DAA15BF72B53747F0097ABF0 /* ViewController.swift in Sources */,
+				DAA15BF32B53747F0097ABF0 /* AppDelegate.swift in Sources */,
+				DA90B8032B7CFD7A00CC5CE0 /* CollectionViewOptions.swift in Sources */,
+				DAA15C3C2B5447710097ABF0 /* IOPTestView.swift in Sources */,
+				DAA15C402B5448460097ABF0 /* SeverityAssesmentView.swift in Sources */,
+				DAA15C382B5447440097ABF0 /* CataractsResultView.swift in Sources */,
+				DAA15C322B5446CB0097ABF0 /* ChooseDiseaseView.swift in Sources */,
+				DAA15C362B5447220097ABF0 /* SlitLampView.swift in Sources */,
+				DAA15BF52B53747F0097ABF0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA15C042B5374800097ABF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA15C0D2B5374800097ABF0 /* OptiCareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA15C0E2B5374800097ABF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA15C192B5374800097ABF0 /* OptiCareUITestsLaunchTests.swift in Sources */,
+				DAA15C172B5374800097ABF0 /* OptiCareUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAA15C0A2B5374800097ABF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAA15BEE2B53747F0097ABF0 /* OptiCare */;
+			targetProxy = DAA15C092B5374800097ABF0 /* PBXContainerItemProxy */;
+		};
+		DAA15C142B5374800097ABF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAA15BEE2B53747F0097ABF0 /* OptiCare */;
+			targetProxy = DAA15C132B5374800097ABF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAA15BF82B53747F0097ABF0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAA15BF92B53747F0097ABF0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAA15C002B5374800097ABF0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAA15C012B5374800097ABF0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAA15C1A2B5374800097ABF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DAA15C1B2B5374800097ABF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAA15C1D2B5374800097ABF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D0BA835759A141EBAF665D6 /* Pods-OptiCare.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NJVS67779D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OptiCare/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow OptiCare to access your camera to take a picture.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IshaNagireddy.OptiCare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAA15C1E2B5374800097ABF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34CD0BD979B25EFD68AF366B /* Pods-OptiCare.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NJVS67779D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OptiCare/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow OptiCare to access your camera to take a picture.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IshaNagireddy.OptiCare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DAA15C202B5374800097ABF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6220DFAB85B13540A72D0967 /* Pods-OptiCareTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NJVS67779D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IshaNagireddy.OptiCareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OptiCare.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OptiCare";
+			};
+			name = Debug;
+		};
+		DAA15C212B5374800097ABF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89AF343DD8BB10F44E64D804 /* Pods-OptiCareTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NJVS67779D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IshaNagireddy.OptiCareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OptiCare.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OptiCare";
+			};
+			name = Release;
+		};
+		DAA15C232B5374800097ABF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CE52642FEF9EDA4CC0E7DB7 /* Pods-OptiCare-OptiCareUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NJVS67779D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IshaNagireddy.OptiCareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OptiCare;
+			};
+			name = Debug;
+		};
+		DAA15C242B5374800097ABF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB789801036CCB906A8ACEF /* Pods-OptiCare-OptiCareUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NJVS67779D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IshaNagireddy.OptiCareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OptiCare;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAA15BEA2B53747F0097ABF0 /* Build configuration list for PBXProject "OptiCare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA15C1A2B5374800097ABF0 /* Debug */,
+				DAA15C1B2B5374800097ABF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA15C1C2B5374800097ABF0 /* Build configuration list for PBXNativeTarget "OptiCare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA15C1D2B5374800097ABF0 /* Debug */,
+				DAA15C1E2B5374800097ABF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA15C1F2B5374800097ABF0 /* Build configuration list for PBXNativeTarget "OptiCareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA15C202B5374800097ABF0 /* Debug */,
+				DAA15C212B5374800097ABF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA15C222B5374800097ABF0 /* Build configuration list for PBXNativeTarget "OptiCareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA15C232B5374800097ABF0 /* Debug */,
+				DAA15C242B5374800097ABF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA5736632B5DDDC10039B968 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA5736642B5DDDC10039B968 /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA5736632B5DDDC10039B968 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		DAA15BFB2B53747F0097ABF0 /* OptiCare.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DAA15BFC2B53747F0097ABF0 /* OptiCare.xcdatamodel */,
+			);
+			currentVersion = DAA15BFC2B53747F0097ABF0 /* OptiCare.xcdatamodel */;
+			path = OptiCare.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DAA15BE72B53747F0097ABF0 /* Project object */;
+}

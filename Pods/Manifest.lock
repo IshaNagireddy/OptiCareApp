@@ -1,0 +1,38 @@
+PODS:
+  - Charts (4.1.0):
+    - Charts/Core (= 4.1.0)
+  - Charts/Core (4.1.0):
+    - SwiftAlgorithms (~> 1.0)
+  - SwiftAlgorithms (1.0.0)
+  - TensorFlowLiteC (2.14.0):
+    - TensorFlowLiteC/Core (= 2.14.0)
+  - TensorFlowLiteC/Core (2.14.0)
+  - TensorFlowLiteSwift (2.14.0):
+    - TensorFlowLiteSwift/Core (= 2.14.0)
+  - TensorFlowLiteSwift/Core (2.14.0):
+    - TensorFlowLiteC (= 2.14.0)
+  - youtube-ios-player-helper (1.0.4)
+
+DEPENDENCIES:
+  - Charts
+  - TensorFlowLiteSwift
+  - youtube-ios-player-helper
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - SwiftAlgorithms
+    - TensorFlowLiteC
+    - TensorFlowLiteSwift
+    - youtube-ios-player-helper
+
+SPEC CHECKSUMS:
+  Charts: ce0768268078eee0336f122c3c4ca248e4e204c5
+  SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
+  TensorFlowLiteC: a836de9b6e6018665ccc349538bdd2c3b80dd7a5
+  TensorFlowLiteSwift: f706b143b69d7bf433aba7b08049bdd11c321a10
+  youtube-ios-player-helper: e9b97535e816db3152179d84d999bc1807ecd689
+
+PODFILE CHECKSUM: 7b4775cec7a6a4e2de28250418a8036d78fdbe82
+
+COCOAPODS: 1.14.3

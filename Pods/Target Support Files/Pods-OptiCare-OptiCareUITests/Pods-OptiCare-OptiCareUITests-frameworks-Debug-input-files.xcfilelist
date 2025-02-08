@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-OptiCare-OptiCareUITests/Pods-OptiCare-OptiCareUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
+${BUILT_PRODUCTS_DIR}/SwiftAlgorithms/Algorithms.framework
+${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework
